@@ -1,0 +1,21 @@
+<h1>{{title}} {{products}}</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Num1</th>
+        <th scope="col">Num2</th>
+        <th scope="col">Sum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of allProducts">
+        <td>{{product.id}}</td>
+        <td>{{product.num1}}</td>
+        <td>{{product.num2}}</td>
+        <td>{{product.sum}}</td>
+      </tr>
+     
+    </tbody>
+  </table>

@@ -1,0 +1,13 @@
+<br/><br/>
+<h2>{{getHelloText()}}</h2><br/>
+<button (click)="getMessage()" type="button" class="btn btn-info">Click Me!</button><br/><br/>
+<input type="text" #text1 placeholder="Enter your message"/>
+<button (click)="getTextMessage(text1.value)" type="button" class="btn btn-outline-primary">Get Message</button>
+<p>Message is:{{message}}</p>
+
+<input type="text" #text2 placeholder="Blur box" (blur)="getTextMessage(text2.value)"/>
+<input type="text" #text3 placeholder="keyup box" (keyup)="getTextMessage(text3.value)"/>
+<input type="text" #text4 placeholder="keydown box" (keydown)="getTextMessage(text4.value)"/>
+<input type="text" #text5 placeholder="input box" (input)="getTextMessage(text5.value)"/>
+<input type="text" #text6 placeholder="mouseover box" (mouseover)="getTextMessage(text6.value)"/>
+<input type="text" #text7 placeholder="mousedown box" (mousedown)="getTextMessage(text7.value)"/>
